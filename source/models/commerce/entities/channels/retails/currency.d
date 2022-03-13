@@ -5,30 +5,23 @@ import models.commerce;
 
 // 
 class DOPTRetailChannelCurrency : DOOPEntity {
-  this() { super();
-    this.attributes([
-      "Channel": OOPAttributeString.descriptions(["en":""]),
-      "CurrencyCode": OOPAttributeString.descriptions(["en":""]),
-      "OMOperatingUnitNumber": OOPAttributeNumber.descriptions(["en":""]),
-      "OMOperatingUnitId": OOPAttributeUUID.descriptions(["en":""]),
-      "backingTable_RetailChannelCurrencyRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
-    ]);
+  mixin(OOPEntityThis!("OPTRetailChannelCurrency"));
+  
+  override void initialize() {
+    super.initialize;
+
+    this
+      .addAttributes([
+        "Channel": OOPAttributeString.descriptions(["en":""]),
+        "CurrencyCode": OOPAttributeString.descriptions(["en":""]),
+        "OMOperatingUnitNumber": OOPAttributeNumber.descriptions(["en":""]),
+        "OMOperatingUnitId": OOPAttributeUUID.descriptions(["en":""]),
+        "backingTable_RetailChannelCurrencyRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
+      ])
+      .registerPath("commerce_retailchannelcurrencies");
   }
-
-  override string entityClass() { return "optRetailChannelCurrency"; }
-  override string entityClasses() { return "optRetailChannelCurrencies"; }
-
-  this(UUID myId) { 
-    this(); this.id(myId); }
-  this(string myName) { 
-    this(); this.name(myName); }
-  this(UUID myId, string myName) { 
-    this(); this.id(myId).name(myName); }
-  this(Json aJson) { 
-    this(); this.fromJson(aJson); }
 }
-auto OPTRetailChannelCurrency() { return new DOPTRetailChannelCurrency; } 
-auto OPTRetailChannelCurrency(Json json) { return new DOPTRetailChannelCurrency(json); } 
+mixin(OOPEntityCalls!("OPTRetailChannelCurrency"));
 
 unittest {
   version(uim_entities) {

@@ -5,37 +5,30 @@ import models.commerce;
 
 // 
 class DOPTRetailChannelAttributeValue : DOOPEntity {
-  this() { super();
-    this.attributes([
-      "RetailChannelId": OOPAttributeUUID.descriptions(["en":""]), 
-      "AttributeGroupName": OOPAttributeString.descriptions(["en":""]), 
-      "AttributeName": OOPAttributeString.descriptions(["en":""]), 
-      "AttributeTypeName": OOPAttributeString.descriptions(["en":""]), 
-      "TextValue": OOPAttributeString.descriptions(["en":""]), 
-      "CurrencyCode": OOPAttributeString.descriptions(["en":""]), 
-      "CurrencyValue": OOPAttributeString.descriptions(["en":""]), 
-      "DateTimeValue": OOPAttributeString.descriptions(["en":""]), 
-      "DecimalValue": OOPAttributeString.descriptions(["en":""]), 
-      "IntegerValue": OOPAttributeString.descriptions(["en":""]), 
-      "BooleanValue": OOPAttributeString.descriptions(["en":""]), 
-      "backingTable_RetailChannelTableRelationshipId": OOPAttributeUUID.descriptions(["en":""]), 
-    ]);
+  mixin(OOPEntityThis!("OPTRetailChannelAttributeValue"));
+  
+  override void initialize() {
+    super.initialize;
+
+    this
+      .addAttributes([
+        "RetailChannelId": OOPAttributeUUID.descriptions(["en":""]), 
+        "AttributeGroupName": OOPAttributeString.descriptions(["en":""]), 
+        "AttributeName": OOPAttributeString.descriptions(["en":""]), 
+        "AttributeTypeName": OOPAttributeString.descriptions(["en":""]), 
+        "TextValue": OOPAttributeString.descriptions(["en":""]), 
+        "CurrencyCode": OOPAttributeString.descriptions(["en":""]), 
+        "CurrencyValue": OOPAttributeString.descriptions(["en":""]), 
+        "DateTimeValue": OOPAttributeString.descriptions(["en":""]), 
+        "DecimalValue": OOPAttributeString.descriptions(["en":""]), 
+        "IntegerValue": OOPAttributeString.descriptions(["en":""]), 
+        "BooleanValue": OOPAttributeString.descriptions(["en":""]), 
+        "backingTable_RetailChannelTableRelationshipId": OOPAttributeUUID.descriptions(["en":""]), 
+      ])
+      .registerPath("commerce_retailchannelattributevalues");
   }
-
-  override string entityClass() { return "optRetailChannelAttributeValue"; }
-  override string entityClasses() { return "optRetailChannelAttributeValues"; }
-
-  this(UUID myId) { 
-    this(); this.id(myId); }
-  this(string myName) { 
-    this(); this.name(myName); }
-  this(UUID myId, string myName) { 
-    this(); this.id(myId).name(myName); }
-  this(Json aJson) { 
-    this(); this.fromJson(aJson); }
 }
-auto OPTRetailChannelAttributeValue() { return new DOPTRetailChannelAttributeValue; } 
-auto OPTRetailChannelAttributeValue(Json json) { return new DOPTRetailChannelAttributeValue(json); } 
+mixin(OOPEntityCalls!("OPTRetailChannelAttributeValue"));
 
 unittest {
   version(uim_entities) {

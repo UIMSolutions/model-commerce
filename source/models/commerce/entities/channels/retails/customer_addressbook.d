@@ -5,31 +5,24 @@ import models.commerce;
 
 // 
 class DOPTRetailChannelCustomerAddressBook : DOOPEntity {
-  this() { super();
-    this.attributes([
-      "AddressBook": OOPAttributeString.descriptions(["en":""]),
-      "AddressBookName": OOPAttributeString.descriptions(["en":""]),
-      "RetailChannelId": OOPAttributeUUID.descriptions(["en":""]),
-      "Relationship_RetailStoreEntityRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
-      "Relationship_RetailOnlineChannelEntityRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
-      "backingTable_RetailStoreAddressBookRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
-    ]);
+  mixin(OOPEntityThis!("OPTRetailChannelCustomerAddressBook"));
+  
+  override void initialize() {
+    super.initialize;
+
+    this
+      .addAttributes([
+        "AddressBook": OOPAttributeString.descriptions(["en":""]),
+        "AddressBookName": OOPAttributeString.descriptions(["en":""]),
+        "RetailChannelId": OOPAttributeUUID.descriptions(["en":""]),
+        "Relationship_RetailStoreEntityRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
+        "Relationship_RetailOnlineChannelEntityRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
+        "backingTable_RetailStoreAddressBookRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
+      ])
+      .registerPath("commerce_retailchannelcustomeraddressbooks");
   }
-
-  override string entityClass() { return "optRetailChannelCustomerAddressBook"; }
-  override string entityClasses() { return "optRetailChannelCustomerAddressBooks"; }
-
-  this(UUID myId) { 
-    this(); this.id(myId); }
-  this(string myName) { 
-    this(); this.name(myName); }
-  this(UUID myId, string myName) { 
-    this(); this.id(myId).name(myName); }
-  this(Json aJson) { 
-    this(); this.fromJson(aJson); }
 }
-auto OPTRetailChannelCustomerAddressBook() { return new DOPTRetailChannelCustomerAddressBook; } 
-auto OPTRetailChannelCustomerAddressBook(Json json) { return new DOPTRetailChannelCustomerAddressBook(json); } 
+mixin(OOPEntityCalls!("OPTRetailChannelCustomerAddressBook"));
 
 unittest {
   version(uim_entities) {

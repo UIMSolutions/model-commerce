@@ -5,34 +5,27 @@ import models.commerce;
 
 // 
 class DOPTRetailChannelCategoryAttribute : DOOPEntity {
-  this() { super();
-    this.attributes([
-      "RetailChannelId": OOPAttributeUUID.descriptions(["en":""]),
-      "ProductCategoryHierarchyName": OOPAttributeString.descriptions(["en":""]),
-      "ProductCategoryName": OOPAttributeString.descriptions(["en":""]),
-      "AttributeName": OOPAttributeString.descriptions(["en":""]),
-      "AttributeTypeName": OOPAttributeString.descriptions(["en":""]),
-      "Relationship_ChannelRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
-      "Relationship_ProductCategoryRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
-      "Relationship_AttributeRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
-      "backingTable_RetailChannelCategoryAttributeRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
-    ]);
+  mixin(OOPEntityThis!("OPTRetailChannelCategoryAttribute"));
+  
+  override void initialize() {
+    super.initialize;
+
+    this
+      .addAttributes([
+        "RetailChannelId": OOPAttributeUUID.descriptions(["en":""]),
+        "ProductCategoryHierarchyName": OOPAttributeString.descriptions(["en":""]),
+        "ProductCategoryName": OOPAttributeString.descriptions(["en":""]),
+        "AttributeName": OOPAttributeString.descriptions(["en":""]),
+        "AttributeTypeName": OOPAttributeString.descriptions(["en":""]),
+        "Relationship_ChannelRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
+        "Relationship_ProductCategoryRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
+        "Relationship_AttributeRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
+        "backingTable_RetailChannelCategoryAttributeRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
+      ])
+      .registerPath("commerce_retailchannelcategoryattributes");
   }
-
-  override string entityClass() { return "optRetailChannelCategoryAttribute"; }
-  override string entityClasses() { return "optRetailChannelCategoryAttributes"; }
-
-  this(UUID myId) { 
-    this(); this.id(myId); }
-  this(string myName) { 
-    this(); this.name(myName); }
-  this(UUID myId, string myName) { 
-    this(); this.id(myId).name(myName); }
-  this(Json aJson) { 
-    this(); this.fromJson(aJson); }
 }
-auto OPTRetailChannelCategoryAttribute() { return new DOPTRetailChannelCategoryAttribute; } 
-auto OPTRetailChannelCategoryAttribute(Json json) { return new DOPTRetailChannelCategoryAttribute(json); } 
+mixin(OOPEntityCalls!("OPTRetailChannelCategoryAttribute"));
 
 unittest {
   version(uim_entities) {

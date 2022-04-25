@@ -5,7 +5,7 @@ import models.commerce;
 
 // 
 class DOPTRetailChannelAttributeValue : DOOPEntity {
-  mixin(OOPEntityThis!("OPTRetailChannelAttributeValue"));
+  mixin(EntityThis!("OPTRetailChannelAttributeValue"));
   
   override void initialize() {
     super.initialize;
@@ -28,7 +28,7 @@ class DOPTRetailChannelAttributeValue : DOOPEntity {
       .registerPath("commerce_retailchannelattributevalues");
   }
 }
-mixin(OOPEntityCalls!("OPTRetailChannelAttributeValue"));
+mixin(EntityCalls!("OPTRetailChannelAttributeValue"));
 
 unittest {
   version(uim_entities) {

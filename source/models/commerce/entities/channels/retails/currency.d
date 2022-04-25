@@ -5,7 +5,7 @@ import models.commerce;
 
 // 
 class DOPTRetailChannelCurrency : DOOPEntity {
-  mixin(OOPEntityThis!("OPTRetailChannelCurrency"));
+  mixin(EntityThis!("OPTRetailChannelCurrency"));
   
   override void initialize() {
     super.initialize;
@@ -21,7 +21,7 @@ class DOPTRetailChannelCurrency : DOOPEntity {
       .registerPath("commerce_retailchannelcurrencies");
   }
 }
-mixin(OOPEntityCalls!("OPTRetailChannelCurrency"));
+mixin(EntityCalls!("OPTRetailChannelCurrency"));
 
 unittest {
   version(uim_entities) {

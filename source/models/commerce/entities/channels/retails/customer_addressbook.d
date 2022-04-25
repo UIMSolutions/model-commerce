@@ -5,7 +5,7 @@ import models.commerce;
 
 // 
 class DOPTRetailChannelCustomerAddressBook : DOOPEntity {
-  mixin(OOPEntityThis!("OPTRetailChannelCustomerAddressBook"));
+  mixin(EntityThis!("OPTRetailChannelCustomerAddressBook"));
   
   override void initialize() {
     super.initialize;
@@ -22,7 +22,7 @@ class DOPTRetailChannelCustomerAddressBook : DOOPEntity {
       .registerPath("commerce_retailchannelcustomeraddressbooks");
   }
 }
-mixin(OOPEntityCalls!("OPTRetailChannelCustomerAddressBook"));
+mixin(EntityCalls!("OPTRetailChannelCustomerAddressBook"));
 
 unittest {
   version(uim_entities) {

@@ -21,8 +21,9 @@ class DOPTRetailCDXDataStoreChannel : DOOPEntity {
 }
 mixin(EntityCalls!("OPTRetailCDXDataStoreChannel"));
 
-unittest {
-  version(uim_entities) {
+version(test_library) {
+  unittest {
+    assert(APLFeedback);
     assert(OPTRetailCDXDataStoreChannel);
 
   auto entity = OPTRetailCDXDataStoreChannel;

@@ -23,8 +23,9 @@ class DOPTRetailChannelCurrency : DOOPEntity {
 }
 mixin(EntityCalls!("OPTRetailChannelCurrency"));
 
-unittest {
-  version(uim_entities) {
+version(test_library) {
+  unittest {
+    assert(APLFeedback);
     assert(OPTRetailChannelCurrency);
 
   auto entity = OPTRetailChannelCurrency;

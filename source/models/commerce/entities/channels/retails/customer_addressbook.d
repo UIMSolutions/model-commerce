@@ -24,8 +24,9 @@ class DOPTRetailChannelCustomerAddressBook : DOOPEntity {
 }
 mixin(EntityCalls!("OPTRetailChannelCustomerAddressBook"));
 
-unittest {
-  version(uim_entities) {
+version(test_library) {
+  unittest {
+    assert(APLFeedback);
     assert(OPTRetailChannelCustomerAddressBook);
 
   auto entity = OPTRetailChannelCustomerAddressBook;

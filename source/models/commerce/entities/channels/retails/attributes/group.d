@@ -34,8 +34,9 @@ class DOPTRetailChannelAttributeGroup : DOOPEntity {
 auto OPTRetailChannelAttributeGroup() { return new DOPTRetailChannelAttributeGroup; } 
 auto OPTRetailChannelAttributeGroup(Json json) { return new DOPTRetailChannelAttributeGroup(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_library) {
+  unittest {
+    assert(APLFeedback);
     assert(OPTRetailChannelAttributeGroup);
 
   auto entity = OPTRetailChannelAttributeGroup;

@@ -6,16 +6,16 @@ import models.commerce;
 // 
 class DOPTRetailChannelAttributeGroup : DOOPEntity {
   this() { super();
-    this.attributes([
-      "ttributeGroup": OOPAttributeString.descriptions(["en":""]),
-      "channel": OOPAttributeString.descriptions(["en":""]),
-      "attributeModifier": OOPAttributeString.descriptions(["en":""]),
-      "attributeGroupName": OOPAttributeString.descriptions(["en":""]),
-      "omOperatingUnitNumber": OOPAttributeNumber.descriptions(["en":""]),
-      "omOperatingUnitId": OOPAttributeUUID.descriptions(["en":""]),
-      "attributeAppliesToModifier": OOPAttributeString.descriptions(["en":""]),
-      "relationship_RetailOnlineChannelEntityRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
-      "backingTable_RetailChannelAttributeGroupRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
+    this.addValues([
+      "ttributeGroup": StringAttributeClass, // 
+      "channel": StringAttributeClass, // 
+      "attributeModifier": StringAttributeClass, // 
+      "attributeGroupName": StringAttributeClass, // 
+      "omOperatingUnitNumber": NumberAttributeClass, // 
+      "omOperatingUnitId": UUIDAttributeClass, // 
+      "attributeAppliesToModifier": StringAttributeClass, // 
+      "relationship_RetailOnlineChannelEntityRelationshipId": UUIDAttributeClass, // 
+      "backingTable_RetailChannelAttributeGroupRelationshipId": UUIDAttributeClass, // 
     ]);
   }
 

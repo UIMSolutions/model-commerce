@@ -11,16 +11,16 @@ class DOPTRetailChannelCategoryAttribute : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
-        "RetailChannelId": OOPAttributeUUID.descriptions(["en":""]),
-        "ProductCategoryHierarchyName": OOPAttributeString.descriptions(["en":""]),
-        "ProductCategoryName": OOPAttributeString.descriptions(["en":""]),
-        "AttributeName": OOPAttributeString.descriptions(["en":""]),
-        "AttributeTypeName": OOPAttributeString.descriptions(["en":""]),
-        "Relationship_ChannelRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
-        "Relationship_ProductCategoryRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
-        "Relationship_AttributeRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
-        "backingTable_RetailChannelCategoryAttributeRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
+      .addValues([
+        "RetailChannelId": UUIDAttributeClass, // 
+        "ProductCategoryHierarchyName": StringAttributeClass, // 
+        "ProductCategoryName": StringAttributeClass, // 
+        "AttributeName": StringAttributeClass, // 
+        "AttributeTypeName": StringAttributeClass, // 
+        "Relationship_ChannelRelationshipId": UUIDAttributeClass, // 
+        "Relationship_ProductCategoryRelationshipId": UUIDAttributeClass, // 
+        "Relationship_AttributeRelationshipId": UUIDAttributeClass, // 
+        "backingTable_RetailChannelCategoryAttributeRelationshipId": UUIDAttributeClass, // 
       ])
       .registerPath("commerce_retailchannelcategoryattributes");
   }

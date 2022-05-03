@@ -11,13 +11,13 @@ class DOPTRetailChannelCustomerAddressBook : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
-        "AddressBook": OOPAttributeString.descriptions(["en":""]),
-        "AddressBookName": OOPAttributeString.descriptions(["en":""]),
-        "RetailChannelId": OOPAttributeUUID.descriptions(["en":""]),
-        "Relationship_RetailStoreEntityRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
-        "Relationship_RetailOnlineChannelEntityRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
-        "backingTable_RetailStoreAddressBookRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
+      .addValues([
+        "AddressBook": StringAttributeClass, // 
+        "AddressBookName": StringAttributeClass, // 
+        "RetailChannelId": UUIDAttributeClass, // 
+        "Relationship_RetailStoreEntityRelationshipId": UUIDAttributeClass, // 
+        "Relationship_RetailOnlineChannelEntityRelationshipId": UUIDAttributeClass, // 
+        "backingTable_RetailStoreAddressBookRelationshipId": UUIDAttributeClass, // 
       ])
       .registerPath("commerce_retailchannelcustomeraddressbooks");
   }

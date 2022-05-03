@@ -11,10 +11,10 @@ class DOPTRetailCDXDataStoreChannel : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
-        "ChannelId": OOPAttributeUUID.descriptions(["en":""]),
-        "ChannelDatabaseId": OOPAttributeUUID.descriptions(["en":""]),
-        "backingTable_RetailCDXDataStoreChannelRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
+      .addValues([
+        "ChannelId": UUIDAttributeClass, // 
+        "ChannelDatabaseId": UUIDAttributeClass, // 
+        "backingTable_RetailCDXDataStoreChannelRelationshipId": UUIDAttributeClass, // 
       ])
       .registerPath("commerce_retailcdxdatastorechannels");
   }

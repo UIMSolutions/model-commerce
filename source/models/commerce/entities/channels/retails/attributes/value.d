@@ -11,19 +11,19 @@ class DOPTRetailChannelAttributeValue : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
-        "RetailChannelId": OOPAttributeUUID.descriptions(["en":""]), 
-        "AttributeGroupName": OOPAttributeString.descriptions(["en":""]), 
-        "AttributeName": OOPAttributeString.descriptions(["en":""]), 
-        "AttributeTypeName": OOPAttributeString.descriptions(["en":""]), 
-        "TextValue": OOPAttributeString.descriptions(["en":""]), 
-        "CurrencyCode": OOPAttributeString.descriptions(["en":""]), 
-        "CurrencyValue": OOPAttributeString.descriptions(["en":""]), 
-        "DateTimeValue": OOPAttributeString.descriptions(["en":""]), 
-        "DecimalValue": OOPAttributeString.descriptions(["en":""]), 
-        "IntegerValue": OOPAttributeString.descriptions(["en":""]), 
-        "BooleanValue": OOPAttributeString.descriptions(["en":""]), 
-        "backingTable_RetailChannelTableRelationshipId": OOPAttributeUUID.descriptions(["en":""]), 
+      .addValues([
+        "RetailChannelId": UUIDAttributeClass, //  
+        "AttributeGroupName": StringAttributeClass, //  
+        "AttributeName": StringAttributeClass, //  
+        "AttributeTypeName": StringAttributeClass, //  
+        "TextValue": StringAttributeClass, //  
+        "CurrencyCode": StringAttributeClass, //  
+        "CurrencyValue": StringAttributeClass, //  
+        "DateTimeValue": StringAttributeClass, //  
+        "DecimalValue": StringAttributeClass, //  
+        "IntegerValue": StringAttributeClass, //  
+        "BooleanValue": StringAttributeClass, //  
+        "backingTable_RetailChannelTableRelationshipId": UUIDAttributeClass, //  
       ])
       .registerPath("commerce_retailchannelattributevalues");
   }

@@ -11,12 +11,12 @@ class DOPTRetailChannelCurrency : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
-        "Channel": OOPAttributeString.descriptions(["en":""]),
-        "CurrencyCode": OOPAttributeString.descriptions(["en":""]),
-        "OMOperatingUnitNumber": OOPAttributeNumber.descriptions(["en":""]),
-        "OMOperatingUnitId": OOPAttributeUUID.descriptions(["en":""]),
-        "backingTable_RetailChannelCurrencyRelationshipId": OOPAttributeUUID.descriptions(["en":""]),
+      .addValues([
+        "Channel": StringAttributeClass, // 
+        "CurrencyCode": StringAttributeClass, // 
+        "OMOperatingUnitNumber": NumberAttributeClass, // 
+        "OMOperatingUnitId": UUIDAttributeClass, // 
+        "backingTable_RetailChannelCurrencyRelationshipId": UUIDAttributeClass, // 
       ])
       .registerPath("commerce_retailchannelcurrencies");
   }

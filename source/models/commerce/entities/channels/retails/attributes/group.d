@@ -7,15 +7,15 @@ import models.commerce;
 class DOPTRetailChannelAttributeGroup : DOOPEntity {
   this() { super();
     this.addValues([
-      "ttributeGroup": StringAttributeClass, // 
-      "channel": StringAttributeClass, // 
-      "attributeModifier": StringAttributeClass, // 
-      "attributeGroupName": StringAttributeClass, // 
-      "omOperatingUnitNumber": NumberAttributeClass, // 
-      "omOperatingUnitId": UUIDAttributeClass, // 
-      "attributeAppliesToModifier": StringAttributeClass, // 
-      "relationship_RetailOnlineChannelEntityRelationshipId": UUIDAttributeClass, // 
-      "backingTable_RetailChannelAttributeGroupRelationshipId": UUIDAttributeClass, // 
+      "ttributeGroup": StringAttribute, // 
+      "channel": StringAttribute, // 
+      "attributeModifier": StringAttribute, // 
+      "attributeGroupName": StringAttribute, // 
+      "omOperatingUnitNumber": NumberAttribute, // 
+      "omOperatingUnitId": UUIDAttribute, // 
+      "attributeAppliesToModifier": StringAttribute, // 
+      "relationship_RetailOnlineChannelEntityRelationshipId": UUIDAttribute, // 
+      "backingTable_RetailChannelAttributeGroupRelationshipId": UUIDAttribute, // 
     ]);
   }
 

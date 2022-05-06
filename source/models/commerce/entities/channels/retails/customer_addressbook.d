@@ -12,12 +12,12 @@ class DOPTRetailChannelCustomerAddressBook : DOOPEntity {
 
     this
       .addValues([
-        "AddressBook": StringAttributeClass, // 
-        "AddressBookName": StringAttributeClass, // 
-        "RetailChannelId": UUIDAttributeClass, // 
-        "Relationship_RetailStoreEntityRelationshipId": UUIDAttributeClass, // 
-        "Relationship_RetailOnlineChannelEntityRelationshipId": UUIDAttributeClass, // 
-        "backingTable_RetailStoreAddressBookRelationshipId": UUIDAttributeClass, // 
+        "AddressBook": StringAttribute, // 
+        "AddressBookName": StringAttribute, // 
+        "RetailChannelId": UUIDAttribute, // 
+        "Relationship_RetailStoreEntityRelationshipId": UUIDAttribute, // 
+        "Relationship_RetailOnlineChannelEntityRelationshipId": UUIDAttribute, // 
+        "backingTable_RetailStoreAddressBookRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("commerce_retailchannelcustomeraddressbooks");
   }

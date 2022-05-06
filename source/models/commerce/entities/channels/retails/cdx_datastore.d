@@ -12,9 +12,9 @@ class DOPTRetailCDXDataStoreChannel : DOOPEntity {
 
     this
       .addValues([
-        "ChannelId": UUIDAttributeClass, // 
-        "ChannelDatabaseId": UUIDAttributeClass, // 
-        "backingTable_RetailCDXDataStoreChannelRelationshipId": UUIDAttributeClass, // 
+        "ChannelId": UUIDAttribute, // 
+        "ChannelDatabaseId": UUIDAttribute, // 
+        "backingTable_RetailCDXDataStoreChannelRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("commerce_retailcdxdatastorechannels");
   }

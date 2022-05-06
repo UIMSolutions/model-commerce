@@ -12,15 +12,15 @@ class DOPTRetailChannelCategoryAttribute : DOOPEntity {
 
     this
       .addValues([
-        "RetailChannelId": UUIDAttributeClass, // 
-        "ProductCategoryHierarchyName": StringAttributeClass, // 
-        "ProductCategoryName": StringAttributeClass, // 
-        "AttributeName": StringAttributeClass, // 
-        "AttributeTypeName": StringAttributeClass, // 
-        "Relationship_ChannelRelationshipId": UUIDAttributeClass, // 
-        "Relationship_ProductCategoryRelationshipId": UUIDAttributeClass, // 
-        "Relationship_AttributeRelationshipId": UUIDAttributeClass, // 
-        "backingTable_RetailChannelCategoryAttributeRelationshipId": UUIDAttributeClass, // 
+        "RetailChannelId": UUIDAttribute, // 
+        "ProductCategoryHierarchyName": StringAttribute, // 
+        "ProductCategoryName": StringAttribute, // 
+        "AttributeName": StringAttribute, // 
+        "AttributeTypeName": StringAttribute, // 
+        "Relationship_ChannelRelationshipId": UUIDAttribute, // 
+        "Relationship_ProductCategoryRelationshipId": UUIDAttribute, // 
+        "Relationship_AttributeRelationshipId": UUIDAttribute, // 
+        "backingTable_RetailChannelCategoryAttributeRelationshipId": UUIDAttribute, // 
       ])
       .registerPath("commerce_retailchannelcategoryattributes");
   }

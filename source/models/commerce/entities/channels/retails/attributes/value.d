@@ -12,18 +12,18 @@ class DOPTRetailChannelAttributeValue : DOOPEntity {
 
     this
       .addValues([
-        "RetailChannelId": UUIDAttributeClass, //  
-        "AttributeGroupName": StringAttributeClass, //  
-        "AttributeName": StringAttributeClass, //  
-        "AttributeTypeName": StringAttributeClass, //  
-        "TextValue": StringAttributeClass, //  
-        "CurrencyCode": StringAttributeClass, //  
-        "CurrencyValue": StringAttributeClass, //  
-        "DateTimeValue": StringAttributeClass, //  
-        "DecimalValue": StringAttributeClass, //  
-        "IntegerValue": StringAttributeClass, //  
-        "BooleanValue": StringAttributeClass, //  
-        "backingTable_RetailChannelTableRelationshipId": UUIDAttributeClass, //  
+        "RetailChannelId": UUIDAttribute, //  
+        "AttributeGroupName": StringAttribute, //  
+        "AttributeName": StringAttribute, //  
+        "AttributeTypeName": StringAttribute, //  
+        "TextValue": StringAttribute, //  
+        "CurrencyCode": StringAttribute, //  
+        "CurrencyValue": StringAttribute, //  
+        "DateTimeValue": StringAttribute, //  
+        "DecimalValue": StringAttribute, //  
+        "IntegerValue": StringAttribute, //  
+        "BooleanValue": StringAttribute, //  
+        "backingTable_RetailChannelTableRelationshipId": UUIDAttribute, //  
       ])
       .registerPath("commerce_retailchannelattributevalues");
   }

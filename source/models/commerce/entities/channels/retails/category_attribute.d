@@ -29,7 +29,6 @@ mixin(EntityCalls!("OPTRetailChannelCategoryAttribute"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
     assert(OPTRetailChannelCategoryAttribute);
 
   auto entity = OPTRetailChannelCategoryAttribute;

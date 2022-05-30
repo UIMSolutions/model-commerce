@@ -14,6 +14,7 @@ public import uim.oop;
 public import uim.entities;
 
 // model-commerce
+public import models.commerce.attributes;
 public import models.commerce.classes;
 public import models.commerce.entities;
 public import models.commerce.utils;

@@ -8,7 +8,7 @@ class DOPTRetailChannelCurrency : DOOPEntity {
   mixin(EntityThis!("OPTRetailChannelCurrency"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

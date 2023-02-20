@@ -8,7 +8,7 @@ class DOPTRetailChannelAttributeValue : DOOPEntity {
   mixin(EntityThis!("OPTRetailChannelAttributeValue"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

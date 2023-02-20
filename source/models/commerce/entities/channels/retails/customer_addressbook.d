@@ -8,7 +8,7 @@ class DOPTRetailChannelCustomerAddressBook : DOOPEntity {
   mixin(EntityThis!("OPTRetailChannelCustomerAddressBook"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

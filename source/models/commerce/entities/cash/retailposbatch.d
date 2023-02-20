@@ -7,12 +7,12 @@ class DRetailPosBatchEntity : DOOPEntity {
   mixin(EntityThis!("RetailPosBatchEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
         "terminal": StringAttribute, //
-        "batchShiftId": StringAttribute, //
+        "batchShiftId": UUIDAttribute, //
         "channel": StringAttribute, //
         "closeDate": StringAttribute, //
         "closeDateTimeUtc": StringAttribute, //
@@ -30,11 +30,11 @@ class DRetailPosBatchEntity : DOOPEntity {
         "roundedAmountTotal": StringAttribute, //
         "salesCount": StringAttribute, //
         "salesTotal": StringAttribute, //
-        "operatorId": StringAttribute, //
+        "operatorId": UUIDAttribute, //
         "startDate": StringAttribute, //
         "startDateTimeUtc": StringAttribute, //
         "startTime": StringAttribute, //
-        "statementId": StringAttribute, //
+        "statementId": UUIDAttribute, //
         "status": StringAttribute, //
         "operationUnitNumber": StringAttribute, //
         "taxTotal": StringAttribute, //
@@ -67,8 +67,8 @@ class DRetailPosBatchEntity : DOOPEntity {
         "errorCodeDateTime": StringAttribute, //
         "errorCodeEditUser": StringAttribute, //
         "storeNumber": StringAttribute, //
-        "backingTable_RetailPosBatchTableRelationshipId": StringAttribute, //
-        "relationship_PrimaryCompanyContextRelationshipId": StringAttribute, //
+        "backingTable_RetailPosBatchTableRelationshipId": UUIDAttribute, //
+        "relationship_PrimaryCompanyContextRelationshipId": UUIDAttribute, //
     ])
     .registerPath("commerce_cash.retailposbatch");
   }

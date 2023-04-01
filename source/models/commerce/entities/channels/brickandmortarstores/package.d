@@ -1,4 +1,4 @@
-module models.commerce.channels;
+module models.commerce.channels.brickandmortarstores;
 
 @safe:
 import models.commerce;

@@ -1,11 +1,11 @@
-module models.commerce.channels.brickandmortarstores.retailbuttongrid;
+module models.commerce.channels.brickandmortarstores.retaildesignertilllayoutbuttongridzone;
 
 @safe:
 import models.commerce;
 
 // 
-class DRetailButtonGridEntity : DOOPEntity {
-  mixin(EntityThis!("RetailButtonGridEntity"));
+class DRetailDesignerTillLayoutButtonGridZone : DOOPEntity {
+  mixin(EntityThis!("RetailDesignerTillLayoutButtonGridZone"));
   
   override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
@@ -21,12 +21,12 @@ class DRetailButtonGridEntity : DOOPEntity {
         "spaceBetweenButtons": StringAttribute, //
         "backingTable_RetailButtonGridRelationshipId": StringAttribute, //
       ])
-      .registerPath("commerce_channelmanagement_brickandmortarstore_retailbuttongridentity");
+      .registerPath("commerce_channelmanagement_brickandmortarstore_retaildesignertilllayoutbuttongridzones");
   }
 }
-mixin(EntityCalls!("RetailButtonGridEntity"));
+mixin(EntityCalls!("RetailDesignerTillLayoutButtonGridZone"));
 
 version(test_model_commerce) {
   unittest {
-    assert(RetailButtonGridEntity);
+    assert(RetailDesignerTillLayoutButtonGridZone);
 }}

@@ -7,7 +7,7 @@ import models.commerce;
 class DOPTRetailChannelAttributeValue : DOOPEntity {
   mixin(EntityThis!("OPTRetailChannelAttributeValue"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
@@ -30,8 +30,7 @@ class DOPTRetailChannelAttributeValue : DOOPEntity {
 }
 mixin(EntityCalls!("OPTRetailChannelAttributeValue"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(APLFeedback);
     assert(OPTRetailChannelAttributeValue);
 

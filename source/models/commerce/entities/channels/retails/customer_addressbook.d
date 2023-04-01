@@ -7,7 +7,7 @@ import models.commerce;
 class DOPTRetailChannelCustomerAddressBook : DOOPEntity {
   mixin(EntityThis!("OPTRetailChannelCustomerAddressBook"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

@@ -7,7 +7,7 @@ import models.commerce;
 class DOPTRetailChannelCategoryAttribute : DOOPEntity {
   mixin(EntityThis!("OPTRetailChannelCategoryAttribute"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
@@ -27,8 +27,7 @@ class DOPTRetailChannelCategoryAttribute : DOOPEntity {
 }
 mixin(EntityCalls!("OPTRetailChannelCategoryAttribute"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(OPTRetailChannelCategoryAttribute);
 
   auto entity = OPTRetailChannelCategoryAttribute;

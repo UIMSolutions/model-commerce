@@ -6,7 +6,7 @@ import models.commerce;
 class DRetailPosBatchEntity : DOOPEntity {
   mixin(EntityThis!("RetailPosBatchEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

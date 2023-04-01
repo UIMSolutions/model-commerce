@@ -7,7 +7,7 @@ import models.commerce;
 class DOPTRetailCDXDataStoreChannel : DOOPEntity {
   mixin(EntityThis!("OPTRetailCDXDataStoreChannel"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
@@ -21,8 +21,7 @@ class DOPTRetailCDXDataStoreChannel : DOOPEntity {
 }
 mixin(EntityCalls!("OPTRetailCDXDataStoreChannel"));
 
-version(test_library) {
-  unittest {
+version(test_library) { unittest {
     assert(APLFeedback);
     assert(OPTRetailCDXDataStoreChannel);
 

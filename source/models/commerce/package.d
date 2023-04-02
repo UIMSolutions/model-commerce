@@ -14,8 +14,13 @@ public import uim.oop;
 public import uim.entities;
 
 // model-commerce
-public import models.commerce.attributes;
-public import models.commerce.classes;
-public import models.commerce.entities;
-public import models.commerce.utils;
-
+public import {
+  import models.commerce.attributes;
+  import models.commerce.classes;
+  import models.commerce.elements;
+  import models.commerce.entities;
+  import models.commerce.interfaces;
+  import models.commerce.usecases;
+  import models.commerce.utils;
+  import models.commerce.values;
+}

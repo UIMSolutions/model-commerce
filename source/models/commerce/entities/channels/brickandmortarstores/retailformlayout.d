@@ -4,7 +4,7 @@ module models.commerce.channels.brickandmortarstores.retailformlayout;
 import models.commerce;
 
 // 
-class DRetailFormLayoutEntity : DOOPEntity {
+class DRetailFormLayoutEntity : DEntity {
   mixin(EntityThis!("RetailFormLayoutEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

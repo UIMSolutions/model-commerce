@@ -4,7 +4,7 @@ module models.commerce.channels.brickandmortarstores.retaildesignertilllayoutima
 import models.commerce;
 
 // 
-class DRetailDesignerTillLayoutImageZone : DOOPEntity {
+class DRetailDesignerTillLayoutImageZone : DEntity {
   mixin(EntityThis!("RetailDesignerTillLayoutImageZone"));
   
   override void initialize(DConfigurationValue configSettings = null) {

@@ -4,7 +4,7 @@ module models.commerce.channels.brickandmortarstores.retailfiscalprinterconfigta
 import models.commerce;
 
 // 
-class DRetailFiscalPrinterConfigTableEntity : DOOPEntity {
+class DRetailFiscalPrinterConfigTableEntity : DEntity {
   mixin(EntityThis!("RetailFiscalPrinterConfigTableEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

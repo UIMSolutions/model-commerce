@@ -4,7 +4,7 @@ module models.commerce.channels.brickandmortarstores.retaildesignertilllayoutbut
 import models.commerce;
 
 // 
-class DRetailDesignerTillLayoutButtonGridZone : DOOPEntity {
+class DRetailDesignerTillLayoutButtonGridZone : DEntity {
   mixin(EntityThis!("RetailDesignerTillLayoutButtonGridZone"));
   
   override void initialize(DConfigurationValue configSettings = null) {

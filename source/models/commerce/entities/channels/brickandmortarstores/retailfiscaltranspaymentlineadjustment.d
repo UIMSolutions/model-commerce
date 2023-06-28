@@ -4,7 +4,7 @@ module models.commerce.channels.brickandmortarstores.retailfiscaltranspaymentlin
 import models.commerce;
 
 // 
-class DRetailFiscalTransPaymentLineAdjustmentEntity : DOOPEntity {
+class DRetailFiscalTransPaymentLineAdjustmentEntity : DEntity {
   mixin(EntityThis!("RetailFiscalTransPaymentLineAdjustmentEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

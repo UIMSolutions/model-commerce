@@ -4,7 +4,7 @@ module models.commerce.channels.brickandmortarstores.retailchannelemployeeaddres
 import models.commerce;
 
 // 
-class DRetailChannelEmployeeAddressBookEntity : DOOPEntity {
+class DRetailChannelEmployeeAddressBookEntity : DEntity {
   mixin(EntityThis!("RetailChannelEmployeeAddressBookEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

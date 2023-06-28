@@ -4,7 +4,7 @@ module models.commerce.channels.brickandmortarstores.retailchannelworker;
 import models.commerce;
 
 // 
-class DRetailChannelWorkerEntity : DOOPEntity {
+class DRetailChannelWorkerEntity : DEntity {
   mixin(EntityThis!("RetailChannelWorkerEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

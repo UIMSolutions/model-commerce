@@ -3,7 +3,7 @@ module models.commerce.entities.cash.retailposbatch2;
 @safe:
 import models.commerce;
 
-class DRetailPosBatch2Entity : DOOPEntity {
+class DRetailPosBatch2Entity : DEntity {
   mixin(EntityThis!("RetailPosBatch2Entity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

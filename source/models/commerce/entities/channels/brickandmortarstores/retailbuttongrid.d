@@ -4,7 +4,7 @@ module models.commerce.channels.brickandmortarstores.retailbuttongrid;
 import models.commerce;
 
 // 
-class DRetailButtonGridEntity : DOOPEntity {
+class DRetailButtonGridEntity : DEntity {
   mixin(EntityThis!("RetailButtonGridEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

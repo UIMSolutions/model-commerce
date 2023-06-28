@@ -4,7 +4,7 @@ module models.commerce.channels.brickandmortarstores.retailbuttongridproductsear
 import models.commerce;
 
 // 
-class DRetailButtonGridProductSearchDataSet : DOOPEntity {
+class DRetailButtonGridProductSearchDataSet : DEntity {
   mixin(EntityThis!("RetailButtonGridProductSearchDataSet"));
   
   override void initialize(DConfigurationValue configSettings = null) {

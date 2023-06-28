@@ -4,7 +4,7 @@ module models.commerce.channels.brickandmortarstores.retailclientbook;
 import models.commerce;
 
 // 
-class DRetailClientBookEntity : DOOPEntity {
+class DRetailClientBookEntity : DEntity {
   mixin(EntityThis!("RetailClientBookEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

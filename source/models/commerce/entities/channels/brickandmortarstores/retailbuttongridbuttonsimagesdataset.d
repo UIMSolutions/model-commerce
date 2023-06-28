@@ -4,7 +4,7 @@ module models.commerce.channels.brickandmortarstores.retailbuttongridbuttonsimag
 import models.commerce;
 
 // 
-class DRetailButtonGridButtonsImagesDataSet : DOOPEntity {
+class DRetailButtonGridButtonsImagesDataSet : DEntity {
   mixin(EntityThis!("RetailButtonGridButtonsImagesDataSet"));
   
   override void initialize(DConfigurationValue configSettings = null) {

@@ -4,7 +4,7 @@ module models.commerce.channels.brickandmortarstores.retailimage;
 import models.commerce;
 
 // 
-class DRetailImagesEntity : DOOPEntity {
+class DRetailImagesEntity : DEntity {
   mixin(EntityThis!("RetailImagesEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

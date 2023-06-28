@@ -4,7 +4,7 @@ module models.commerce.channels.retails.cdx_datastore;
 import models.commerce;
 
 // 
-class DOPTRetailCDXDataStoreChannel : DOOPEntity {
+class DOPTRetailCDXDataStoreChannel : DEntity {
   mixin(EntityThis!("OPTRetailCDXDataStoreChannel"));
   
   override void initialize(DConfigurationValue configSettings = null) {

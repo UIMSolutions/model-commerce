@@ -4,7 +4,7 @@ module models.commerce.channels.brickandmortarstores.retailfunctionalityprofilef
 import models.commerce;
 
 // 
-class DRetailFunctionalityProfileFiscalIntegrationTechnicalProfileLineEntity : DOOPEntity {
+class DRetailFunctionalityProfileFiscalIntegrationTechnicalProfileLineEntity : DEntity {
   mixin(EntityThis!("RetailFunctionalityProfileFiscalIntegrationTechnicalProfileLineEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

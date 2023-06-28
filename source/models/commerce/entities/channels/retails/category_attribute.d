@@ -4,7 +4,7 @@ module models.commerce.channels.retails.category_attribute;
 import models.commerce;
 
 // 
-class DOPTRetailChannelCategoryAttribute : DOOPEntity {
+class DOPTRetailChannelCategoryAttribute : DEntity {
   mixin(EntityThis!("OPTRetailChannelCategoryAttribute"));
   
   override void initialize(DConfigurationValue configSettings = null) {

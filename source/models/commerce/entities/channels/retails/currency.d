@@ -4,7 +4,7 @@ module models.commerce.channels.retails.currency;
 import models.commerce;
 
 // 
-class DOPTRetailChannelCurrency : DOOPEntity {
+class DOPTRetailChannelCurrency : DEntity {
   mixin(EntityThis!("OPTRetailChannelCurrency"));
   
   override void initialize(DConfigurationValue configSettings = null) {

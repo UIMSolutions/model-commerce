@@ -4,7 +4,7 @@ module models.commerce.channels.retails.customer_addressbook;
 import models.commerce;
 
 // 
-class DOPTRetailChannelCustomerAddressBook : DOOPEntity {
+class DOPTRetailChannelCustomerAddressBook : DEntity {
   mixin(EntityThis!("OPTRetailChannelCustomerAddressBook"));
   
   override void initialize(DConfigurationValue configSettings = null) {

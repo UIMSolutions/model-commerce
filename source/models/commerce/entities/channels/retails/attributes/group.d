@@ -4,7 +4,7 @@ module models.commerce.channels.retails.attributes.group;
 import models.commerce;
 
 // 
-class DOPTRetailChannelAttributeGroup : DOOPEntity {
+class DOPTRetailChannelAttributeGroup : DEntity {
   this() { super();
     this.addValues([
       "ttributeGroup": StringAttribute, // 
